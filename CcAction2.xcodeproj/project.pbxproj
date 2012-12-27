@@ -131,8 +131,11 @@
 		18C2C3D9168BE5D700D5199C /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C3D8168BE5D700D5199C /* vec4.c */; };
 		18C2C3DE168BE5D700D5199C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C3DD168BE5D700D5199C /* main.m */; };
 		18C2C3E1168BE5D700D5199C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C3E0168BE5D700D5199C /* AppDelegate.m */; };
-		18C2C3E4168BE5D700D5199C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C3E3168BE5D700D5199C /* HelloWorldLayer.m */; };
 		18C2C3E7168BE5D700D5199C /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C3E6168BE5D700D5199C /* IntroLayer.m */; };
+		18C2CC35168BEDA200D5199C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C2CC34168BEDA200D5199C /* Default-568h@2x.png */; };
+		18C2CC39168BEDCC00D5199C /* ActionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2CC38168BEDCC00D5199C /* ActionLayer.m */; };
+		18C2CC3C168BEE2300D5199C /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C2CC3A168BEE2300D5199C /* ball.png */; };
+		18C2CC3D168BEE2300D5199C /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C2CC3B168BEE2300D5199C /* ball@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -394,10 +397,13 @@
 		18C2C3DD168BE5D700D5199C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C2C3DF168BE5D700D5199C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18C2C3E0168BE5D700D5199C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18C2C3E2168BE5D700D5199C /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		18C2C3E3168BE5D700D5199C /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		18C2C3E5168BE5D700D5199C /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		18C2C3E6168BE5D700D5199C /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		18C2CC34168BEDA200D5199C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		18C2CC37168BEDCC00D5199C /* ActionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionLayer.h; sourceTree = "<group>"; };
+		18C2CC38168BEDCC00D5199C /* ActionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionLayer.m; sourceTree = "<group>"; };
+		18C2CC3A168BEE2300D5199C /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		18C2CC3B168BEE2300D5199C /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,10 +464,11 @@
 			children = (
 				18C2C3DF168BE5D700D5199C /* AppDelegate.h */,
 				18C2C3E0168BE5D700D5199C /* AppDelegate.m */,
-				18C2C3E2168BE5D700D5199C /* HelloWorldLayer.h */,
-				18C2C3E3168BE5D700D5199C /* HelloWorldLayer.m */,
 				18C2C3E5168BE5D700D5199C /* IntroLayer.h */,
 				18C2C3E6168BE5D700D5199C /* IntroLayer.m */,
+				18C2CC37168BEDCC00D5199C /* ActionLayer.h */,
+				18C2CC38168BEDCC00D5199C /* ActionLayer.m */,
+				18C2CC3E168BEE2900D5199C /* MyResources */,
 				18C2C268168BE5D500D5199C /* Resources */,
 				18C2C282168BE5D500D5199C /* libs */,
 				18C2C3DB168BE5D700D5199C /* Supporting Files */,
@@ -472,6 +479,7 @@
 		18C2C268168BE5D500D5199C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18C2CC34168BEDA200D5199C /* Default-568h@2x.png */,
 				18C2C269168BE5D500D5199C /* Default.png */,
 				18C2C26B168BE5D500D5199C /* Default-Landscape~ipad.png */,
 				18C2C26D168BE5D500D5199C /* fps_images.png */,
@@ -832,6 +840,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18C2CC3E168BEE2900D5199C /* MyResources */ = {
+			isa = PBXGroup;
+			children = (
+				18C2CC3F168BEE3100D5199C /* Image */,
+				18C2CC40168BEE3B00D5199C /* Image@2x */,
+			);
+			name = MyResources;
+			sourceTree = "<group>";
+		};
+		18C2CC3F168BEE3100D5199C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				18C2CC3A168BEE2300D5199C /* ball.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		18C2CC40168BEE3B00D5199C /* Image@2x */ = {
+			isa = PBXGroup;
+			children = (
+				18C2CC3B168BEE2300D5199C /* ball@2x.png */,
+			);
+			name = "Image@2x";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -895,6 +928,9 @@
 				18C2C27E168BE5D500D5199C /* Icon@2x.png in Resources */,
 				18C2C281168BE5D500D5199C /* iTunesArtwork in Resources */,
 				18C2C3BF168BE5D700D5199C /* ChangeLog in Resources */,
+				18C2CC35168BEDA200D5199C /* Default-568h@2x.png in Resources */,
+				18C2CC3C168BEE2300D5199C /* ball.png in Resources */,
+				18C2CC3D168BEE2300D5199C /* ball@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,8 +1043,8 @@
 				18C2C3D9168BE5D700D5199C /* vec4.c in Sources */,
 				18C2C3DE168BE5D700D5199C /* main.m in Sources */,
 				18C2C3E1168BE5D700D5199C /* AppDelegate.m in Sources */,
-				18C2C3E4168BE5D700D5199C /* HelloWorldLayer.m in Sources */,
 				18C2C3E7168BE5D700D5199C /* IntroLayer.m in Sources */,
+				18C2CC39168BEDCC00D5199C /* ActionLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1148,7 @@
 				18C2C3EC168BE5D700D5199C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
