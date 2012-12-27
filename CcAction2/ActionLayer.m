@@ -412,7 +412,7 @@
 
 -(void)prepareMenu4 {
   CGSize winSize = [CCDirector sharedDirector].winSize;
-  int fontSize = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad? 20:10;
+  int fontSize = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad? 20:12;
   
   CCLabelTTF *label0 = [CCLabelTTF labelWithString:@"Speed" fontName:@"Helvetica" fontSize:fontSize];
   CCMenuItemLabel *menuItemLabel0 = [CCMenuItemLabel itemWithLabel:label0 target:self selector:@selector(CCSpeed)];
@@ -472,8 +472,7 @@
   CCMenuItemLabel *menuItemLabel18 = [CCMenuItemLabel itemWithLabel:label18 target:self selector:@selector(CCEaseExponentialInOut)];
   
   CCMenu *menu = [CCMenu menuWithItems:menuItemLabel0,menuItemLabel1,menuItemLabel2,menuItemLabel3,menuItemLabel4,menuItemLabel5,menuItemLabel6,menuItemLabel7,menuItemLabel8,menuItemLabel9,menuItemLabel10,menuItemLabel11,menuItemLabel12,menuItemLabel13,menuItemLabel14,menuItemLabel15,menuItemLabel16,menuItemLabel17,menuItemLabel18, nil];
-//  [menu alignItemsVertically];
-  [menu alignItemsVerticallyWithPadding:5];
+  [menu alignItemsVerticallyWithPadding:2];
   [menu setPosition:CGPointMake(winSize.width*4/5, winSize.height/2)];
   
   [self addChild:menu];
